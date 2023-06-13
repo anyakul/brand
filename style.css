@@ -60,6 +60,13 @@ span {
   margin-left: 40px;
   font-size: 14px;
   line-height: 16px;
+  display: block;
+}
+
+.menu__item--hidden {
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .menu__item:hover,
@@ -166,6 +173,12 @@ span {
   padding: 15px;
   border-left: 12px solid #F16D7F;
   color: #222222;
+
+  @media (max-width: 767px) {
+    margin-left: 20px;
+    margin-top: 145px;
+    margin-bottom: 145px;
+  }
 }
 
 .presentation__head {
@@ -176,6 +189,11 @@ span {
   @media (max-width: 1199px) {
     font-size: 44px;
     line-height: 53px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 38px;
+    line-height: 46px;
   }
 }
 
@@ -188,25 +206,44 @@ span {
     font-size: 24px;
     line-height: 25px;
   }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .presentation__image {
   margin-left: -220px;
 
   @media (max-width: 1199px) {
+    margin-left: 0;
+    width: 386px;
     margin-right: 0px;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 
 .offers {
-  display: grid;
-  grid-template-columns: repeat(3, 31%);
-  justify-content: space-between;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+    justify-content: space-between;
+  }
 }
 
 .offers>.offers__item--big {
-  grid-column-start: 1;
-  grid-column-end: 4;
+  @media (min-width: 768px) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  @media (max-width: 767px) {
+    padding: 30px;
+  }
 }
 
 .offers__item {
@@ -259,13 +296,17 @@ span {
 }
 
 .products__list {
-  display: grid;
-  grid-template-columns: repeat(3, 32%);
-  justify-content: space-between;
   margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 31%);
+  justify-content: space-between;
 
   @media (max-width: 1199px) {
-    grid-template-columns: repeat(2, 49%);
+    grid-template-columns: repeat(2, 48%);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 100%);
   }
 }
 
@@ -336,15 +377,10 @@ span {
   display: block;
   margin-top: 10px;
   margin-bottom: 20px;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 14px;
+  line-height: 17px;
   font-weight: 300;
   color: #5D5D5D;
-
-  @media (max-width: 1199px) {
-    font-size: 14px;
-    line-height: 17px;
-  }
 }
 
 .products__item-price {
