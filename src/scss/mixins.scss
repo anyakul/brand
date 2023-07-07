@@ -1,0 +1,146 @@
+@mixin flex($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin section-margin {
+  margin: 95px 0;
+
+  @media (max-width: $mobile-width) {
+    margin: 50px 0;
+  }
+}
+
+@mixin negative-section-top-margin {
+  margin-top: -95px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: -50px;
+  }
+}
+
+@mixin section-padding {
+  padding: 95px 0;
+
+  @media (max-width: $mobile-width) {
+    padding: 50px 0;
+  }
+}
+
+@mixin section-header {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+@mixin text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin bold-text {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+@mixin big-header {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 900;
+
+  @media (max-width: $tablet-width) {
+    font-size: 44px;
+    line-height: 53px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+@mixin big-text {
+  font-size: 32px;
+  line-height: 27px;
+  font-weight: 900;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@mixin info-header {
+  font-size: 18px;
+  line-height: 29px;
+}
+
+@mixin big-item-header {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@mixin item-header {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin small-item-header {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+@mixin black-layout {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 22, 22, 0.7);
+}
+
+@mixin center-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: block;
+  margin: auto;
+}
+
+@mixin add-basket-button($color, $hover-color) {
+  @include flex(flex-start, center);
+  margin: auto;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 12px;
+  border: 1px solid $color;
+  color: $color;
+
+  svg {
+    margin-right: 10px;
+    fill: $color;
+  }
+
+  &:hover {
+    background-color: $color;
+    color: $hover-color;
+
+    svg {
+      fill: $hover-color;
+    }
+  }
+}

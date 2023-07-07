@@ -1,0 +1,47 @@
+.product-form {
+  &__list {
+    @include flex(center, center);
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    @include flex(flex-start, flex-start);
+    position: relative;
+    width: 27%;
+    margin-left: 23px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+
+    @media (max-width: $mobile-width) {
+      font-size: 10px;
+    }
+  }
+
+  &__sublist {
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding: 5px;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__subitem {
+    text-align: center;
+    padding-bottom: 3px;
+  }
+
+  &__button {
+    @include add-basket-button($pink, $white);
+  }
+}

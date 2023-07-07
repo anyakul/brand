@@ -1,0 +1,38 @@
+.breadcrumbs {
+  padding: 65px 0;
+  background-color: $breadcrumbs-back;
+
+  @media (max-width: $mobile-width) {
+    padding: 25px 0 46px 0;
+  }
+
+  &__container {
+    @include flex(space-between, center);
+    text-transform: uppercase;
+
+    @media (max-width: $mobile-width) {
+      display: block;
+    }
+  }
+
+  &__current {
+    @include big-item-header;
+    text-align: center;
+
+    @media (max-width: $mobile-width) {
+      display: block;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__list {
+    @include flex(space-between, center);
+    text-transform: uppercase;
+  }
+
+  &__item {
+    @include flex(space-between, center);
+    margin-left: 10px;
+    text-transform: uppercase;
+  }
+}

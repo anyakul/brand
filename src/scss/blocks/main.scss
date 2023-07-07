@@ -1,0 +1,12 @@
+.main-section {
+  color: $black;
+
+  &--feature {
+    margin-bottom: 0;
+    padding: 100px 0;
+
+    @media (max-width: $tablet-width) {
+      padding: 50px 0;
+    }
+  }
+}
