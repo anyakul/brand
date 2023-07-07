@@ -191,45 +191,57 @@
           </div>
           <ul class="product-form__list">
             <li class="product-form__item">
-              <label for="service">TRANDING NOW</label>
-              <input class="visually-hidden" type="text" id="service" value="CHOOSE COLOR" disabled>
+              TRANDING NOW
+              <button class="product-form__item-button">
+                <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="product-form__sublist product-form__sublist--active">
+                <li class="product-form__subitem">
+                  <input class="visually-hidden" type="checkbox" id="yes" value="yes" name="tranding">
+                  <label for="yes">YES</label>
+                </li>
+                <li class="product-form__subitem">
+                  <input class="visually-hidden" type="checkbox" id="no" value="no" name="tranding">
+                  <label for="black">NO</label>
+                </li>
+              </ul>
+            </li>
+            <li class="product-form__item">
+              SIZE
               <button class="product-form__item-button">
                 <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#icon-arrow"></use>
                 </svg>
               </button>
               <ul class="product-form__sublist -product-form__sublist--active">
-                <li class="product-form__subitem">BLACK
-                </li>
-                <li class="product-form__subitem">BLUE</li>
-              </ul>
-            </li>
-            <li class="product-form__item">
-              <label for="service">SIZE</label>
-              <input class="visually-hidden" type="text" id="service" value="CHOOSE SIZE" disabled>
-              <button class="product-form__item-button">
-                <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
-                </svg>
-              </button>
-              <ul class="product-form__sublist">
-                <li class="product-form__subitem">S
-                </li>
-                <li class="product-form__subitem">M</li>
-              </ul>
-            </li>
-            <li class="product-form__item">
-              <label for="price">PRICE</label>
-              <input class="visually-hidden" type="text" id="service" value="price" disabled>
-              <button class="product-form__item-button">
-                <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
-                </svg>
-              </button>
-              <ul class="product-form__sublist">
                 <li class="product-form__subitem">
-                  less than 100$ </li>
-                <li class="product-form__subitem">more than 100$</li>
+                  <input class="visually-hidden" type="checkbox" id="xs" value="xs" name="size">
+                  <label for="xs">XS</label>
+                </li>
+                <li class="product-form__subitem">
+                  <input class="visually-hidden" type="checkbox" id="s" value="s" name="size">
+                  <label for="s">S</label>
+                </li>
+              </ul>
+            </li>
+            <li class="product-form__item">
+              PRICE
+              <button class="product-form__item-button">
+                <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="product-form__sublist -product-form__sublist--active">
+                <li class="product-form__subitem">
+                  <input class="visually-hidden" type="checkbox" id="less" value="less" name="quauntity">
+                  <label for="less">LESS 100$</label>
+                </li>
+                <li class="product-form__subitem">
+                  <input class="visually-hidden" type="checkbox" id="more" value="more" name="quauntity">
+                  <label for="more">MORE 100$</label>
+                </li>
               </ul>
             </li>
           </ul>
