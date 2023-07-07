@@ -160,116 +160,85 @@
         </ul>
       </div>
     </section>
-    <section class="good">
-      <div class="good__container container">
-        <div class="good__wrapper swiper-wrapper">
-          <div class="good__item swiper-slide">
-            <img class="good__image" src="img/good.png" alt="man">
+    <section class="product-form-section">
+      <div class="product-form-section__container container">
+        <form class="product-form">
+          <button class="product-form__filter-button product-form__filter-button--active">
+            FILTER
+            <svg width="15" height="10" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-filter"></use>
+            </svg>
+          </button>
+          <div class="product-form__filter">
+            <ul class="product-form__filter-list">
+              <li class="product-form__filter-item">
+                <label for="service">TRANDING NOW</label>
+                <input class="visually-hidden" type="text" id="service" value="CHOOSE COLOR" disabled>
+                <button class="product-form__item-button">
+                  <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <ul class="product-form__sublist -product-form__sublist--active">
+                  <li class="product-form__subitem">
+                    <label for="service">TRANDING NOW</label>
+                    <input class="visually-hidden" type="checkbox" id="service" value="CHOOSE COLOR" disabled>
+                  </li>
+                  <li class="product-form__subitem">BLUE</li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <div class="good__item swiper-slide">
-            <img class="good__image" src="img/good.png" alt="man">
-          </div>
-        </div>
-        <button class="good__prev">
-          <svg width="31" height="31" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#icon-button-prev"></use>
-          </svg>
-        </button>
-        <button class="good__next">
-          <svg width="31" height="31" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#icon-button-prev"></use>
-          </svg>
-        </button>
-      </div>
-    </section>
-    <section class="product-info">
-      <div class="product-info__container container">
-        <div class="product-info__info">
-          <div class="product-info__info-wrapper">
-            <p class="product-info__category"><span class="special-style">WOMAN COLLECTION</span></p>
-            <p class="product-info__big-text">MOSCHINO CHEAP AND CHIC</p>
-            <p class="product-info__text">Compellingly actualize fully researched processes before proactive
-              outsourcing.
-              Progressively syndicate collaborative
-              architectures before cutting-edge services. Completely visualize parallel core competencies rather than
-              exceptional
-              portals.</p>
-            <p class="product-info__price"><span class="special-style">$561</span></p>
-          </div>
-        </div>
-        <div class="product-info__info">
-          <div class="product-info__info-wrapper">
-            <form class="product-form">
-              <ul class="product-form__list">
-                <li class="product-form__item">
-                  COLOR
-                  <button class="product-form__item-button">
-                    <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg">
-                      <use xlink:href="img/sprite.svg#icon-arrow"></use>
-                    </svg>
-                  </button>
-                  <ul class="product-form__sublist product-form__sublist--active">
-                    <li class="product-form__subitem">
-                      <input class="visually-hidden" type="checkbox" id="blue" value="blue" name="color">
-                      <label for="blue">BLUE</label>
-                    </li>
-                    <li class="product-form__subitem">
-                      <input class="visually-hidden" type="checkbox" id="black" value="black" name="color">
-                      <label for="black">BLACK</label>
-                    </li>
-                  </ul>
-                </li>
-                <li class="product-form__item">
-                  SIZE
-                  <button class="product-form__item-button">
-                    <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg">
-                      <use xlink:href="img/sprite.svg#icon-arrow"></use>
-                    </svg>
-                  </button>
-                  <ul class="product-form__sublist -product-form__sublist--active">
-                    <li class="product-form__subitem">
-                      <input class="visually-hidden" type="checkbox" id="xs" value="xs" name="size">
-                      <label for="xs">XS</label>
-                    </li>
-                    <li class="product-form__subitem">
-                      <input class="visually-hidden" type="checkbox" id="s" value="s" name="size">
-                      <label for="s">S</label>
-                    </li>
-                  </ul>
-                </li>
-                <li class="product-form__item">
-                  QUANTITY
-                  <button class="product-form__item-button">
-                    <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg">
-                      <use xlink:href="img/sprite.svg#icon-arrow"></use>
-                    </svg>
-                  </button>
-                  <ul class="product-form__sublist -product-form__sublist--active">
-                    <li class="product-form__subitem">
-                      <input class="visually-hidden" type="checkbox" id="1" value="1" name="quauntity">
-                      <label for="1">1</label>
-                    </li>
-                    <li class="product-form__subitem">
-                      <input class="visually-hidden" type="checkbox" id="2" value="2" name="quauntity">
-                      <label for="2">2</label>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <button class="product-form__button">
-                <svg width="32" height="29" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#icon-basket"></use>
+          <ul class="product-form__list">
+            <li class="product-form__item">
+              <label for="service">TRANDING NOW</label>
+              <input class="visually-hidden" type="text" id="service" value="CHOOSE COLOR" disabled>
+              <button class="product-form__item-button">
+                <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
                 </svg>
-                Add To Cart
               </button>
-            </form>
-          </div>
-        </div>
+              <ul class="product-form__sublist -product-form__sublist--active">
+                <li class="product-form__subitem">BLACK
+                </li>
+                <li class="product-form__subitem">BLUE</li>
+              </ul>
+            </li>
+            <li class="product-form__item">
+              <label for="service">SIZE</label>
+              <input class="visually-hidden" type="text" id="service" value="CHOOSE SIZE" disabled>
+              <button class="product-form__item-button">
+                <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="product-form__sublist">
+                <li class="product-form__subitem">S
+                </li>
+                <li class="product-form__subitem">M</li>
+              </ul>
+            </li>
+            <li class="product-form__item">
+              <label for="price">PRICE</label>
+              <input class="visually-hidden" type="text" id="service" value="price" disabled>
+              <button class="product-form__item-button">
+                <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="product-form__sublist">
+                <li class="product-form__subitem">
+                  less than 100$ </li>
+                <li class="product-form__subitem">more than 100$</li>
+              </ul>
+            </li>
+          </ul>
+        </form>
       </div>
     </section>
     <section class="products">
       <div class="products__container container">
-        <ul class="products__list swiper-wrapper">
+        <ul class="products__list">
           <li class="products__item">
             <div class="products__item-image-button">
               <img class="products__item-image" src="img/product1.png" alt=product1>
@@ -287,14 +256,14 @@
                 Australian
                 arbiter of cool Kym Ellery teams up with Moda
                 Operandi.</p>
-              <a class="products__item-price">$52.00</a>
+              <a class=" products__item-price">$52.00</a>
             </div>
           </li>
           <li class="products__item">
             <div class="products__item-image-button">
               <img class="products__item-image" src="img/product2.png" alt="product2">
               <button class="products__item-button">
-                <svg width="32" height="29" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#icon-basket"></use>
                 </svg>
                 Add To Cart
@@ -330,10 +299,101 @@
               <a class=" products__item-price">$52.00</a>
             </div>
           </li>
+          <li class="products__item">
+            <div class="products__item-image-button">
+              <img class="products__item-image" src="img/product4.png" alt="product4">
+              <button class="products__item-button">
+                <svg width="32" height="29" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-basket"></use>
+                </svg>
+                Add To Cart
+              </button>
+            </div>
+            <div class="products__item-texts">
+              <a class="products__item-head" href="product.html">ELLERY X M'O CAPSULE</a>
+              <p class="products__item-text">Known for her sculptural takes on traditional
+                tailoring,
+                Australian
+                arbiter of cool Kym Ellery teams up with Moda
+                Operandi.</p>
+              <a class=" products__item-price">$52.00</a>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="products__item-image-button">
+              <img class="products__item-image" src="img/product5.png" alt="product5">
+              <button class="products__item-button">
+                <svg width="32" height="29" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-basket"></use>
+                </svg>
+                Add To Cart
+              </button>
+            </div>
+            <div class="products__item-texts">
+              <a class="products__item-head" href="product.html">ELLERY X M'O CAPSULE</a>
+              <p class="products__item-text">Known for her sculptural takes on traditional
+                tailoring,
+                Australian
+                arbiter of cool Kym Ellery teams up with Moda
+                Operandi.</p>
+              <a class=" products__item-price">$52.00</a>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="products__item-image-button">
+              <img class="products__item-image" src="img/product6.png" alt="product5">
+              <button class="products__item-button">
+                <svg width="32" height="29" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-basket"></use>
+                </svg>
+                Add To Cart
+              </button>
+            </div>
+            <div class="products__item-texts">
+              <a class="products__item-head" href="product.html">ELLERY X M'O CAPSULE</a>
+              <p class="products__item-text">Known for her sculptural takes on traditional
+                tailoring,
+                Australian
+                arbiter of cool Kym Ellery teams up with Moda
+                Operandi.</p>
+              <a class=" products__item-price">$52.00</a>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
-    <section class="subscribes" style="background-image: url(../img/subscribes-bg.png);">
+    <section class="feature">
+      <div class="feature__section-container container">
+        <h2 class="visually-hidden">feature</h2>
+        <ul class="feature__list">
+          <li class="feature__item">
+            <img class="feature__item-image" src="img/feature1.svg" alt="feature1">
+            <div class="feature__item-texts">
+              <a class="feature__item-head" href="index.html">Free Delivery</a>
+              <p class="feature__item-text">Worldwide delivery on all. Authorit tively morph
+                next-generation innov tion with extensive models.</p>
+            </div>
+          </li>
+          <li class="feature__item">
+            <img class="feature__item-image" src="img/feature2.svg" alt="feature2">
+            <div class="feature__item-texts">
+              <a class="feature__item-head" href="index.html">Sales & discounts</a>
+              <p class="feature__item-text">Worldwide delivery on all. Authorit tively morph
+                next-generation innov tion with extensive models.</p>
+            </div>
+          </li>
+          <li class="feature__item">
+            <img class="feature__item-image" src="img/feature3.svg" alt="feature3">
+            <div class="feature__item-texts">
+              <a class="feature__item-head" href="index.html">Quality assurance</a>
+              <p class="feature__item-text">Worldwide delivery on all. Authorit tively morph
+                next-generation innov tion with extensive models.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="subscribes subscribes--main" style="background-image: url(../img/subscribes-bg.png);">
       <div class="subscribes__container container">
         <h2 class="visually-hidden">feature</h2>
         <div class="subscribes__info">

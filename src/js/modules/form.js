@@ -9,15 +9,4 @@ export function form() {
       select[i].classList.toggle('product-form__sublist--active');
     })
   }
-  for (const item of subitems) {
-    item.addEventListener('click', function (e) {
-      let el = e.target;
-      while ((el = el.parentElement) && !el.classList.contains("product-form__item"));
-      let elem = el.querySelector(".product-form__input");
-      elem.value = e.target.textContent;
-      select.forEach(element => {
-        element.classList.remove('product-form__sublist--active')
-      });
-    });
-  }
 }

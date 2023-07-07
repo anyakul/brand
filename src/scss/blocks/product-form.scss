@@ -1,24 +1,45 @@
+.product-form-section {
+  @include section-margin;
+}
+
 .product-form {
+  margin-bottom: 50px;
+
+  &__filter-button--active {
+    color: $pink;
+
+    svg {
+      fill: $pink;
+    }
+  }
+
   &__list {
     @include flex(center, center);
-    margin-bottom: 50px;
+    margin-bottom: 65px;
   }
 
   &__item {
     @include flex(flex-start, flex-start);
     position: relative;
-    width: 27%;
     margin-left: 23px;
+    margin-bottom: 10px;
 
     &:first-child {
       margin-left: 0;
     }
+
+    label {
+      @include flex(flex-start, center);
+      margin-right: 10px;
+    }
+  }
+
+  &__item-button {
+    margin-left: 10px;
   }
 
   &__input {
     width: 100%;
-    border: none;
-    background-color: transparent;
 
     @media (max-width: $mobile-width) {
       font-size: 10px;
@@ -26,19 +47,43 @@
   }
 
   &__sublist {
-    display: none;
     position: absolute;
-    top: 100%;
-    padding: 5px;
+    top: 150%;
+    left: 0;
+    z-index: 10;
+    display: none;
+    min-width: 80px;
+    width: fit-content;
+    padding: 10px;
+    background-color: $white;
+    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
 
     &--active {
       display: block;
     }
   }
 
+  input[type="checkbox"]+label::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
   &__subitem {
     text-align: center;
-    padding-bottom: 3px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__button {
