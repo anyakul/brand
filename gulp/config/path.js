@@ -4,7 +4,6 @@ const rootFolder = nodePath.basename(nodePath.resolve());
 const buildFolder = `./deploy`;
 const srcFolder = `./src`;
 const srcHome = `./`
-//const buildSite = `./_site`
 
 export const path = {
   build: {
@@ -32,5 +31,4 @@ export const path = {
   buildFolder: buildFolder,
   srcFolder: srcFolder,
   rootFolder: rootFolder,
-  ftp: 'test.yowa.ru'
 }

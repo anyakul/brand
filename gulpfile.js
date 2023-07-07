@@ -18,7 +18,6 @@ import { svg } from "./gulp/tasks/svg.js";
 import { images } from "./gulp/tasks/images.js";
 import { fonts } from "./gulp/tasks/fonts.js";
 import { zip } from "./gulp/tasks/zip.js";
-import { ftpLoad } from "./gulp/tasks/ftp.js";
 
 function watcher() {
   gulp.watch(path.watch.html, copy)
@@ -34,6 +33,5 @@ const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server))
 
 gulp.task('default', dev);
 const start = gulp.series(dev)
-const ftp = gulp.series(reset, mainTasks, ftpLoad)
+const ftp = gulp.series(reset, mainTasks)
 export { start }
-export { ftp }
