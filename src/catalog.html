@@ -26,9 +26,9 @@
       </ul>
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__item-link" href="index.html">
+          <button class="menu__button" href="index.html">
             <img src="img/icon-burger.svg" alt="icon-burger">
-          </a>
+          </button>
           <div class="menu__submenu">
             <p class="menu__submenu-header">MENU</p>
             <ul class="menu__submenu-list">
@@ -136,7 +136,7 @@
             <img src="img/icon-user.svg" alt="avatar">
           </a>
         </li>
-        <li class="menu__item menu__item--hidden">
+        <li class="menu__item menu__item--hidden menu__item--relative">
           <a class="menu__item-link" href="index.html">
             <img src="img/icon-basket.svg" alt="basket">
           </a>
@@ -163,28 +163,110 @@
     <section class="product-form-section">
       <div class="product-form-section__container container">
         <form class="product-form">
-          <button class="product-form__filter-button product-form__filter-button--active">
-            FILTER
+          <button class="product-form__filter-button">
+            <span>FILTER</span>
             <svg width="15" height="10" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#icon-filter"></use>
             </svg>
           </button>
-          <div class="product-form__filter">
+          <div class="product-form__filter -product-form__filter--active">
+            <button class="product-form__filter-button product-form__filter-button--active">
+              <span>FILTER</span>
+              <svg width="15" height="10" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-filter"></use>
+              </svg>
+            </button>
             <ul class="product-form__filter-list">
               <li class="product-form__filter-item">
-                <label for="service">TRANDING NOW</label>
-                <input class="visually-hidden" type="text" id="service" value="CHOOSE COLOR" disabled>
-                <button class="product-form__item-button">
-                  <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
-                  </svg>
+                <button class="product-form__filter-item-button product-form__filter-item-button--active">
+                  CATEGORY
                 </button>
-                <ul class="product-form__sublist -product-form__sublist--active">
-                  <li class="product-form__subitem">
-                    <label for="service">TRANDING NOW</label>
-                    <input class="visually-hidden" type="checkbox" id="service" value="CHOOSE COLOR" disabled>
+                <ul class="product-form__filter-item-sublist product-form__filter-item-sublist--active">
+                  <li class="product-form__filter-item-subitem">
+                    <label for="Accessories">Accessories</label>
+                    <input class="visually-hidden" type="checkbox" id="Accessories" value="Accessories" name="category">
                   </li>
-                  <li class="product-form__subitem">BLUE</li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="Bags">Bags</label>
+                    <input class="visually-hidden" type="checkbox" id="Bags" value="Bags" name="category">
+                  </li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="Denim">Denim</label>
+                    <input class="visually-hidden" type="checkbox" id="Denim" value="Denim" name="category">
+                  </li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="HoodiesSweatshirts">Hoodies & Sweatshirts</label>
+                    <input class="visually-hidden" type="checkbox" id="HoodiesSweatshirts" value="HoodiesSweatshirts"
+                      name="category">
+                  </li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="JacketsCoats">Jackets & Coats</label>
+                    <input class="visually-hidden" type="checkbox" id="JacketsCoats" value="JacketsCoats"
+                      name="category">
+                  </li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="Polos">Polos</label>
+                    <input class="visually-hidden" type="checkbox" id="Polos" value="Polos" name="category">
+                  </li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="Shirts">Shirts</label>
+                    <input class="visually-hidden" type="checkbox" id="Shirts" value="Shirts" name="category">
+                  </li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="Shoes">Shoes</label>
+                    <input class="visually-hidden" type="checkbox" id="Shoes" value="Shoes" name="category">
+                  </li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="SweatersKnits">Sweaters & Knits</label>
+                    <input class="visually-hidden" type="checkbox" id="SweatersKnits" value="SweatersKnits"
+                      name="category">
+                  </li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="T-Shirts">T-Shirts</label>
+                    <input class="visually-hidden" type="checkbox" id="T-Shirts" value="T-Shirts" name="category">
+                  </li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="Tanks">Tanks</label>
+                    <input class="visually-hidden" type="checkbox" id="Tanks" value="Tanks" name="category">
+                  </li>
+                </ul>
+              </li>
+              <li class="product-form__filter-item">
+                <button class="product-form__filter-item-button">
+                  BRAND
+                </button>
+                <ul class="product-form__filter-item-sublist -product-form__filter-item-sublist--active">
+                  <li class="product-form__filter-item-subitem">
+                    <label for="DolceGobbana">Dolce & Gobbana</label>
+                    <input class="visually-hidden" type="checkbox" id="DolceGobbana" value="DolceGobbana" name="brand">
+                  </li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="Outventure">Outventure</label>
+                    <input class="visually-hidden" type="checkbox" id="Outventure" value="Outventure" name="brand">
+                  </li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="Columbia">Columbia</label>
+                    <input class="visually-hidden" type="checkbox" id="Columbia" value="Columbia" name="brand">
+                  </li>
+                </ul>
+              </li>
+              <li class="product-form__filter-item">
+                <button class="product-form__filter-item-button">
+                  DESIGNER
+                </button>
+                <ul class="product-form__filter-item-sublist -product-form__filter-item-sublist--active">
+                  <li class="product-form__filter-item-subitem">
+                    <label for="DolceGobbana">Dolce & Gobbana</label>
+                    <input class="visually-hidden" type="checkbox" id="DolceGobbana" value="DolceGobbana" name="brand">
+                  </li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="Outventure">Outventure</label>
+                    <input class="visually-hidden" type="checkbox" id="Outventure" value="Outventure" name="brand">
+                  </li>
+                  <li class="product-form__filter-item-subitem">
+                    <label for="Columbia">Columbia</label>
+                    <input class="visually-hidden" type="checkbox" id="Columbia" value="Columbia" name="brand">
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -197,7 +279,7 @@
                   <use xlink:href="img/sprite.svg#icon-arrow"></use>
                 </svg>
               </button>
-              <ul class="product-form__sublist product-form__sublist--active">
+              <ul class="product-form__sublist -product-form__sublist--active">
                 <li class="product-form__subitem">
                   <input class="visually-hidden" type="checkbox" id="yes" value="yes" name="tranding">
                   <label for="yes">YES</label>

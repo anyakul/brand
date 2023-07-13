@@ -1,11 +1,45 @@
-.product-form-section {
-  @include section-margin;
-}
-
 .product-form {
-  margin-bottom: 50px;
+  position: relative;
+
+  @media (max-width: $mobile-width) {
+    font-size: 12px;
+  }
+
+  &__filter {
+    display: none;
+
+    &--active {
+      position: absolute;
+      left: -15px;
+      top: -13px;
+      z-index: 100;
+      filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+      display: block;
+      width: 32%;
+      padding: 13px 15px;
+      background-color: $white
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+
+  &__filter-button {
+    span {
+      @media (max-width: $mobile-width) {
+        display: none;
+      }
+
+    }
+
+    svg {
+      margin-left: 10px;
+    }
+  }
 
   &__filter-button--active {
+    margin-bottom: 25px;
     color: $pink;
 
     svg {
@@ -13,16 +47,45 @@
     }
   }
 
+  &__filter-item {
+    margin-bottom: 20px;
+  }
+
+  &__filter-item-button {
+    width: 100%;
+    padding: 11px;
+    border-left: 5px solid #EF5B70;
+    border-bottom: $light-grey-border;
+    text-align: left;
+  }
+
+  &__filter-item-button--active {
+    color: #EF5B70;
+  }
+
+  &__filter-item-sublist {
+    display: none;
+    padding: 25px;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__filter-item-subitem {
+    margin-bottom: 11px;
+    text-align: left;
+  }
+
   &__list {
     @include flex(center, center);
-    margin-bottom: 65px;
+    margin-bottom: 50px;
   }
 
   &__item {
     @include flex(flex-start, flex-start);
     position: relative;
     margin-left: 23px;
-    margin-bottom: 10px;
 
     &:first-child {
       margin-left: 0;
@@ -86,7 +149,19 @@
     }
   }
 
+  &__button-wrapper {
+    @media (max-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+
   &__button {
     @include add-basket-button($pink, $white);
+    width: 212px;
+    padding-left: 25px;
+
+    svg {
+      margin-right: 23px;
+    }
   }
 }

@@ -4,5 +4,6 @@
 
 .header__container {
   @include flex(space-between, center);
+  position: relative;
   padding: 20px 0;
 }

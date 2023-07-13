@@ -1,23 +1,46 @@
 .product-info {
+  position: relative;
+  z-index: 10;
+  margin-top: -50px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
+
   &__container {
+    padding: 65px 0;
     border: $light-grey-border;
     text-align: center;
-
-    @media (max-width: $tablet-width) {
-      width: 100%;
-    }
+    background-color: $white;
   }
 
   &__info {
-    padding: 65px;
     width: 80%;
-    padding: 65px;
     margin: auto;
-    padding: 65px 0;
+    padding-bottom: 65px;
+    padding-top: 65px;
     border-bottom: $light-grey-border;
 
     &:last-child {
+      padding-bottom: 0;
       border-bottom: none;
+
+      @media (max-width: $mobile-width) {
+        border-bottom: none;
+      }
+    }
+
+    &:first-child {
+      padding-top: 0;
+
+      @media (max-width: $mobile-width) {
+        padding-top: 0;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      padding-top: 50px;
+      padding-bottom: 30px;
     }
   }
 
