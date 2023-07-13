@@ -1,5 +1,25 @@
 .product-form {
   position: relative;
+  margin-top: 50px;
+  margin-bottom: 65px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  &--filter {
+    @include flex(space-between, center);
+
+    .product-form__list {
+      margin-bottom: 0;
+      margin-right: auto;
+
+      @media (max-width: $tablet-width) {
+        margin-right: 0;
+      }
+    }
+  }
 
   @media (max-width: $mobile-width) {
     font-size: 12px;
@@ -26,11 +46,12 @@
   }
 
   &__filter-button {
+    margin-right: auto;
+
     span {
       @media (max-width: $mobile-width) {
         display: none;
       }
-
     }
 
     svg {

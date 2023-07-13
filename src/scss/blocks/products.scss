@@ -1,4 +1,5 @@
 .products {
+  overflow: hidden;
   margin-top: 65px;
   margin-bottom: 65px;
 
@@ -7,7 +8,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin: 25px 0 30px 0;
+    margin: 25px auto 30px auto;
   }
 
   &--page {
@@ -33,8 +34,11 @@
     margin-bottom: 45px;
   }
 
-  &__list {
+  .products__container {
     margin-bottom: 50px;
+  }
+
+  &__list {
     display: grid;
     grid-template-columns: repeat(3, 31%);
     justify-content: space-between;
