@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Главная страница</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="index.html">
+            <img src="img/logo.png" alt="logo">
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="index.html">
+            <img src="img/icon-search.svg" alt="search">
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item">
+          <button class="menu__button">
+            <img src="img/icon-burger.svg" alt="icon-burger">
+          </button>
+          <div class="menu__submenu">
+            <p class="menu__submenu-header">MENU</p>
+            <ul class="menu__submenu-list">
+              <li class="menu__submenu-item">
+                <a href="index.html">
+                  <span>MAN</span>
+                </a>
+                <ul class="menu__submenu-list-list">
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      Accessories
+                    </a>
+                  </li>
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      Bags
+                    </a>
+                  </li>
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      Denim
+                    </a>
+                  </li>
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      T-Shirts
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__submenu-item">
+                <a href="index.html">
+                  <span>WOMAN</span>
+                </a>
+                <ul class="menu__submenu-list-list">
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      Accessories
+                    </a>
+                  </li>
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      Jackets & Coats
+                    </a>
+                  </li>
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      Polos
+                    </a>
+                  </li>
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      T-Shirts
+                    </a>
+                  </li>
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      Shirts
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__submenu-item">
+                <a href="index.html">
+                  <span>KIDS</span>
+                </a>
+                <ul class="menu__submenu-list-list">
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      Accessories
+                    </a>
+                  </li>
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      Jackets & Coats
+                    </a>
+                  </li>
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      Polos
+                    </a>
+                  </li>
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      T-Shirts
+                    </a>
+                  </li>
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      Shirts
+                    </a>
+                  </li>
+                  <li class="menu__submenu-item">
+                    <a href="index.html">
+                      Bags
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item menu__item--hidden">
+          <a class="menu__item-link" href="login.html">
+            <img src="img/icon-user.svg" alt="avatar">
+          </a>
+        </li>
+        <li class="menu__item menu__item--hidden menu__item--relative">
+          <a class="menu__item-link" href="cart.html">
+            <img src="img/icon-basket.svg" alt="basket">
+          </a>
+          <a class="menu__item-link-number" href="cart.html">
+            5
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section class="breadcrumbs">
+      <h2 class="visually-hidden">breadcrumbs</h2>
+      <div class="breadcrumbs__container container">
+        <a class="breadcrumbs__current" href="product.html"><span class="special-style">REGISTRATION</span></a>
+      </div>
+    </section>
+    <section class="login container">
+      <h2 class="visually-hidden">Cart</h2>
+      <form class="login__form">
+        <div class="login__form-part">
+          <h3 class="login__form-header">Your Name</h3>
+          <ul class="login__form-list">
+            <li class="login__form-item">
+              <input class="login__form-input" type="text" placeholder="First Name" id="name">
+              <label for="name"></label>
+            </li>
+            <li class="cart__form-item">
+              <input class="login__form-input" type="text" placeholder="Last Name" id="last-name">
+              <label for="last-name"></label>
+            </li>
+          </ul>
+          <ul class="login__radio-form-list">
+            <li class="login__radio-form-item">
+              <input class="visually-hidden" type="radio" id="male" name="gender">
+              <label class="login__form-label" for="male">male</label>
+            </li>
+            <li class="login__radio-form-item">
+              <input class="visually-hidden" type="radio" id="female" name="gender">
+              <label class="login__form-label" for="female">female</label>
+            </li>
+          </ul>
+          <h3 class="login__form-header">Login Details:
+          </h3>
+          <ul class="login__form-list">
+            <li class="login__form-item">
+              <input class="login__form-input" type="text" placeholder="Email">
+            </li>
+            <li class="login__form-item">
+              <input class="login__form-input" type="text" placeholder="Password">
+            </li>
+          </ul>
+          <p class="login__form-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase
+            and
+            lowercase letters</p>
+          <button class="login__form-button">JOIN NOW</button>
+        </div>
+      </form>
+      <div class="login-text">
+        <h2 class="login-text__header">LOYALTY HAS ITS PERKS</h2>
+        <p class="login-text__text">Get in on the loyalty program where you can earn points and unlock serious perks.
+          Starting with these as soon as you
+          join:</p>
+        <ul class="login-text__list">
+          <li class="login-text__item">
+            <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-tick"></use>
+            </svg>15% off welcome offer
+          </li>
+          <li class="login-text__item">
+            <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-tick"></use>
+            </svg>Free shipping, returns and exchanges on all orders
+          </li>
+          <li class="login-text__item">
+            <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-tick"></use>
+            </svg>$10 off a purchase on your birthday
+          </li>
+          <li class="login-text__item">
+            <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-tick"></use>
+            </svg>Early access to products
+          </li>
+          <li class="login-text__item">
+            <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-tick"></use>
+            </svg>Exclusive offers & rewards
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="subscribes" style="background-image: url(../img/subscribes-bg.png);">
+      <div class="subscribes__container container">
+        <h2 class="visually-hidden">feature</h2>
+        <div class="subscribes__info">
+          <img class="subscribes__info-image" src="img/Intersect.png" width="100" height="100" alt="subscribes">
+          <p class="subscribes__info-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+            condimentum“</p>
+        </div>
+        <div class="subscribes__info">
+          <p class="subscribes__info-header">SUBSCRIBE</p>
+          <p class="subscribes__info-text">FOR OUR NEWLETTER AND PROMOTION</p>
+          <form class="subscribes__form" action="post">
+            <fieldset class="subscribes__form-fieldset">
+              <input class="subscribes__form-input" type="text" placeholder="Enter Your Email" id="subscribes">
+              <button class="subscribes__form-button">Subscribe</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__info">© 2021 Brand All Rights Reserved.</div>
+      <ul class="footer__socials">
+        <li class="footer__socials-item">
+          <a class="footer__socials-item-link" href="#">
+            <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a class="footer__socials-item-link" href="#">
+            <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

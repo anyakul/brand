@@ -1,0 +1,81 @@
+.subscribes {
+  @include section-padding;
+  width: 100%;
+  background-size: cover;
+
+  &--main {
+    @include negative-section-top-margin;
+  }
+
+  &__container {
+    @include flex(space-between, center);
+
+    @media (max-width: $tablet-width) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__info {
+    width: 35%;
+    text-align: center;
+
+    @media (max-width: $tablet-width) {
+      width: 51%;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+
+  &__info-image {
+    margin-bottom: 30px;
+  }
+
+  &__info-header {
+    @include big-item-header;
+    font-weight: 600;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+
+  &__info-text {
+    @include item-header;
+  }
+
+  &__form {
+    margin-top: 40px;
+  }
+
+  &__form-fieldset {
+    @include flex(center, strecth);
+    margin: auto;
+  }
+
+  &__form-input {
+    border-radius: 20px 0 0 20px;
+    padding: 8px 20px;
+    background-color: $item-back;
+    border: none;
+  }
+
+  .subscribes__form-button {
+    border-radius: 0 20px 20px 0;
+    padding: 18px 20px;
+    color: $white;
+    background-color: $form-pink;
+    border: none;
+
+    &:hover {
+      background-color: $pink;
+    }
+  }
+}

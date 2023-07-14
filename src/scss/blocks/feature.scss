@@ -1,0 +1,44 @@
+.feature {
+  @include section-margin;
+  @include section-padding;
+  color: $item-back;
+  background-color: $black;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 28%);
+    justify-content: space-between;
+
+    @media (max-width: $tablet-width) {
+      grid-template-columns: repeat(1, 48%);
+      justify-content: center;
+    }
+
+    @media (max-width: $mobile-width) {
+      grid-template-columns: repeat(1, 100%);
+    }
+  }
+
+  &__item {
+    text-align: center;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__item-image {
+    margin-bottom: 30px;
+  }
+
+  &__item-head {
+    @include item-header;
+    color: $item-back;
+  }
+
+  &__item-text {
+    margin-top: 15px;
+    font-weight: 300;
+    color: $item-back;
+  }
+}

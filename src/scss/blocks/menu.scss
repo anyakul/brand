@@ -1,0 +1,104 @@
+.menu {
+  @include flex(flex-start, center);
+
+  &__item {
+    z-index: 10;
+    margin-left: 40px;
+
+    &--relative {
+      position: relative;
+    }
+
+    &--hidden {
+      @media (max-width: $mobile-width) {
+        display: none;
+      }
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__item-link-number {
+    position: absolute;
+    top: -7px;
+    right: -3px;
+    display: block;
+    padding: 2px 5px;
+    font-size: 12px;
+    line-height: 14px;
+    color: $white;
+    background-color: $pink;
+    border-radius: 50%;
+  }
+
+  &__submenu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 100;
+    display: none;
+    min-width: 232px;
+    padding: 32px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    text-align: left;
+
+    @media (max-width: $mobile-width) {
+      left: 0;
+      width: 100%;
+    }
+
+    .menu__item-button {
+      position: absolute;
+      width: 32px;
+      height: 23px;
+      top: 20px;
+      right: 10px;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__submenu-item-header {
+    margin-bottom: 20px;
+    text-align: left;
+
+    a {
+      color: $pink;
+    }
+  }
+
+  &__submenu-item {
+    margin-bottom: 20px;
+    text-align: left;
+
+    a {
+      color: $black;
+    }
+
+    span {
+      color: $pink;
+    }
+  }
+
+  &__submenu-header {
+    @include bold-text;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  &__submenu-list {
+    margin-bottom: 20px;
+    margin-top: 12px;
+  }
+
+  &__submenu-list-list {
+    margin-bottom: 20px;
+    margin-top: 12px;
+    margin-left: 15px;
+  }
+}

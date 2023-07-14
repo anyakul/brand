@@ -1,0 +1,188 @@
+.product-form {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 65px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  &--filter {
+    @include flex(space-between, center);
+
+    .product-form__list {
+      margin-bottom: 0;
+      margin-right: auto;
+
+      @media (max-width: $tablet-width) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 12px;
+  }
+
+  &__filter {
+    display: none;
+
+    &--active {
+      position: absolute;
+      left: -15px;
+      top: -13px;
+      z-index: 100;
+      filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+      display: block;
+      width: 32%;
+      padding: 13px 15px;
+      background-color: $white
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+
+  &__filter-button {
+    margin-right: auto;
+
+    span {
+      @media (max-width: $mobile-width) {
+        display: none;
+      }
+    }
+
+    svg {
+      margin-left: 10px;
+    }
+  }
+
+  &__filter-button--active {
+    margin-bottom: 25px;
+    color: $pink;
+
+    svg {
+      fill: $pink;
+    }
+  }
+
+  &__filter-item {
+    margin-bottom: 20px;
+  }
+
+  &__filter-item-button {
+    width: 100%;
+    padding: 11px;
+    border-left: 5px solid #EF5B70;
+    border-bottom: $light-grey-border;
+    text-align: left;
+  }
+
+  &__filter-item-button--active {
+    color: #EF5B70;
+  }
+
+  &__filter-item-sublist {
+    display: none;
+    padding: 25px;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__filter-item-subitem {
+    margin-bottom: 11px;
+    text-align: left;
+  }
+
+  &__list {
+    @include flex(center, center);
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    @include flex(flex-start, flex-start);
+    position: relative;
+    margin-left: 23px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    label {
+      @include flex(flex-start, center);
+      margin-right: 10px;
+    }
+  }
+
+  &__item-button {
+    margin-left: 10px;
+  }
+
+  &__input {
+    width: 100%;
+
+    @media (max-width: $mobile-width) {
+      font-size: 10px;
+    }
+  }
+
+  &__sublist {
+    position: absolute;
+    top: 150%;
+    left: 0;
+    z-index: 10;
+    display: none;
+    min-width: 80px;
+    width: fit-content;
+    padding: 10px;
+    background-color: $white;
+    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+
+    &--active {
+      display: block;
+    }
+  }
+
+  input[type="checkbox"]+label::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  &__subitem {
+    text-align: center;
+    padding-bottom: 10px;
+    white-space: nowrap;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button-wrapper {
+    @media (max-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    @include add-basket-button($pink, $white);
+    width: 212px;
+    padding-left: 25px;
+
+    svg {
+      margin-right: 23px;
+    }
+  }
+}
