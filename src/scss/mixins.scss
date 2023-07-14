@@ -5,10 +5,12 @@
 }
 
 @mixin section-margin {
-  margin: 95px 0;
+  margin-top: 95px;
+  margin-bottom: 95px;
 
   @media (max-width: $mobile-width) {
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -32,6 +34,10 @@
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+}
+
+@mixin form-header {
+  font-size: 16px;
 }
 
 @mixin text {
@@ -83,12 +89,20 @@
 }
 
 @mixin big-item-header {
+  width: 60%;
+  margin-bottom: 42px;
   font-size: 24px;
   line-height: 29px;
+  font-weight: 400;
 }
 
 @mixin item-header {
   font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin item-info {
+  font-size: 22px;
   line-height: 24px;
 }
 

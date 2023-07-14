@@ -1,0 +1,167 @@
+.cart {
+  @include flex(space-between, flex-start);
+  @include section-margin;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+
+  &__goods-list {
+    margin-bottom: 70px;
+  }
+
+  &__goods {
+    width: 60%;
+
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      margin-bottom: 65px;
+    }
+  }
+
+  &__goods-item {
+    @include flex(flex-start, stretch);
+    width: 100%;
+    margin-bottom: 40px;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+  }
+
+  &__goods-item-text-num {
+    margin-left: 24px;
+    padding: 1px 18px;
+    border: $light-grey-border;
+  }
+
+  &__goods-item-image-wrapper {
+    width: 40%;
+  }
+
+  &__goods-item-image {
+    width: 100%;
+  }
+
+  &__goods-item-texts {
+    width: 60%;
+    padding: 22px 30px;
+    background-color: $white;
+  }
+
+  &__goods-item-header {
+    @include big-item-header;
+  }
+
+  &__goods-item-text {
+    @include item-info;
+    margin-bottom: 6px;
+  }
+
+  &__links {
+    @include flex(space-between, center)
+  }
+
+  &__link {
+    padding: 17px 40px;
+    border: $light-grey-border;
+  }
+
+  &__form {
+    width: 35%;
+
+    @media (max-width: $tablet-width) {
+      @include flex(space-between, center);
+      width: 100%;
+      margin-bottom: 65px;
+    }
+
+    @media (max-width: $mobile-width) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__form-part {
+    @media (max-width: $tablet-width) {
+      width: 100%;
+    }
+
+    &:first-child {
+      margin-bottom: 57px;
+
+      @media (max-width: $tablet-width) {
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
+
+      @media (max-width: $mobile-width) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &__form-header {
+    @include form-header;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  &__form-item {
+    margin-bottom: 20px;
+  }
+
+  &__form-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #A4A4A4;
+
+    &::placeholder {
+      color: #A4A4A4;
+    }
+  }
+
+  &__form-button {
+    padding: 10px 15px;
+    border: 1px solid #A4A4A4;
+  }
+
+  &__info {
+    padding: 40px 45px;
+    background-color: #f5f3f3;
+  }
+
+  &__info-text {
+    @include flex(flex-end, center);
+    margin-bottom: 12px;
+  }
+
+  &__info-text-item,
+  &__info-text-item-big {
+    margin-left: 40px;
+  }
+
+  &__info-text,
+  &__info-text-item-big {
+    @include flex(flex-end, center);
+    margin-bottom: 12px;
+  }
+
+  &__info-text-item-big {
+    font-size: 16px;
+    margin-bottom: 21px;
+  }
+
+  &__info-text-item {
+    font-size: 11px;
+  }
+
+  &__info-button-wrapper {
+    padding-top: 17px;
+    border-top: $light-grey-border
+  }
+
+  &__info-button {
+    width: 100%;
+    background-color: $pink;
+    color: $white;
+    padding: 15px 40px;
+    text-align: center;
+  }
+}

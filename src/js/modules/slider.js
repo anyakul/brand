@@ -18,8 +18,6 @@ export function slider() {
 
   const productsSwiper = new Swiper('.products', {
     slidesPerView: 1,
-    observer: true,
-    observeParents: true,
     navigation: {
       nextEl: '.pagination__button-next',
       prevEl: '.pagination__button-prev',
@@ -28,8 +26,6 @@ export function slider() {
       el: '.pagination__list',
       clickable: true,
       type: 'custom',
-      dynamicBullets: true,
-      dynamicMainBullets: 5,
       dynamicBullets: true,
       dynamicMainBullets: 5,
       renderCustom: function (swiper, current, total) {
