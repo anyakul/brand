@@ -1,0 +1,96 @@
+.login {
+  @include flex(space-between, flex-start);
+  @include section-margin;
+
+  @media (max-width: $mobile-width) {
+    flex-wrap: wrap;
+  }
+
+  &__form {
+    width: 35%;
+
+    @media (max-width: $tablet-width) {
+      width: 48%;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__form-part {
+    @media (max-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+
+  &:first-child {
+    margin-bottom: 57px;
+
+    @media (max-width: $tablet-width) {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__form-header {
+    @include form-header;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  &__form-item {
+    margin-bottom: 20px;
+  }
+
+  &__form-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #A4A4A4;
+
+    &::placeholder {
+      color: #A4A4A4;
+    }
+  }
+
+  &__form-text {
+    margin-bottom: 40px;
+  }
+
+  &__radio-form-list {
+    @include flex(flex-start, center);
+    margin-bottom: 30px;
+  }
+
+  &__radio-form-item {
+    margin-right: 20px;
+  }
+
+  &__form-button {
+    @include small-pink-button;
+    width: 30%;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+
+  input[type="radio"]+label::before {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    border: $light-grey-border;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  label {
+    @include flex(flex-start, center);
+  }
+}

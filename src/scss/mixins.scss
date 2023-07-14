@@ -94,6 +94,11 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 400;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @mixin item-header {
@@ -157,4 +162,20 @@
       fill: $hover-color;
     }
   }
+}
+
+@mixin small-pink-button {
+  width: 100%;
+  background-color: $pink;
+  color: $white;
+  padding: 15px;
+  text-align: center;
+}
+
+@mixin pink-button {
+  width: 100%;
+  background-color: $pink;
+  color: $white;
+  padding: 15px 40px;
+  text-align: center;
 }

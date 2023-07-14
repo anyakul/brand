@@ -21,7 +21,9 @@
     text-align: left;
 
     @media (max-width: $mobile-width) {
+      text-align: center;
       display: block;
+      width: 100%;
     }
   }
 

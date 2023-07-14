@@ -153,76 +153,80 @@
         <a class="breadcrumbs__current" href="product.html"><span class="special-style">SHOPPING CART</span></a>
       </div>
     </section>
-    <section class="cart container">
+    <section class="login container">
       <h2 class="visually-hidden">Cart</h2>
-      <div class="cart__goods">
-        <ul class="cart__goods-list">
-          <li class="cart__goods-item">
-            <div class="cart__goods-item-image-wrapper">
-              <img class="cart__goods-item-image" src="img/product1.png">
-            </div>
-            <div class="cart__goods-item-texts">
-              <h2 class="cart__goods-item-header">
-                MANGO PEOPLE T-SHIRT
-              </h2>
-              <p class="cart__goods-item-text">Price: <span class="special-style">$300</span></p>
-              <p class="cart__goods-item-text">Color: Red</p>
-              <p class="cart__goods-item-text">Size: Xl</p>
-              <p class="cart__goods-item-text">Quantity: <span class="cart__goods-item-text-num">2</span></p>
-            </div>
-          </li>
-          <li class="cart__goods-item">
-            <div class="cart__goods-item-image-wrapper">
-              <img class="cart__goods-item-image" src="img/product7.png">
-            </div>
-            <div class="cart__goods-item-texts">
-              <h2 class="cart__goods-item-header">
-                MANGO PEOPLE T-SHIRT
-              </h2>
-              <p class="cart__goods-item-text">Price: <span class="special-style">$300</span></p>
-              <p class="cart__goods-item-text">Color: Red</p>
-              <p class="cart__goods-item-text">Size: Xl</p>
-              <p class="cart__goods-item-text">Quantity: <span class="cart__goods-item-text-num">2</span></p>
-            </div>
-          </li>
-        </ul>
-        <div class="cart__links">
-          <a class="cart__link">CLEAR SHOPPING CART</a>
-          <a class="cart__link">CONTINUE SHOPPING</a>
-        </div>
-      </div>
-      <form class="cart__form">
-        <div class="cart__form-part">
-          <h3 class="cart__form-header">SHIPPING ADRESS</h3>
-          <ul class="cart__form-list">
-            <li class="cart__form-item">
-              <input class="cart__form-input" type="text" placeholder="City" value="Bangladesh">
+      <form class="login__form">
+        <div class="login__form-part">
+          <h3 class="login__form-header">Your Name</h3>
+          <ul class="login__form-list">
+            <li class="login__form-item">
+              <input class="login__form-input" type="text" placeholder="First Name" id="name">
+              <label for="name"></label>
             </li>
             <li class="cart__form-item">
-              <input class="cart__form-input" type="text" placeholder="State">
-            </li>
-            <li class="cart__form-item">
-              <input class="cart__form-input" type="text" placeholder="Postcode / Zip">
+              <input class="login__form-input" type="text" placeholder="Last Name" id="last-name">
+              <label for="last-name"></label>
             </li>
           </ul>
-          <button class="cart__form-button">GET A QUOTE</button>
-        </div>
-        <div class="cart__form-part">
-          <div class="cart__info">
-            <div class="cart__info-text">
-              <p class="cart__info-text-item">SUB TOTAL</p>
-              <p class="cart__info-text-item">900$</p>
-            </div>
-            <div class="cart__info-text">
-              <p class="cart__info-text-item-big">GRAND TOTAL</p>
-              <p class="cart__info-text-item-big special-style">900$</p>
-            </div>
-            <div class="cart__info-button-wrapper">
-              <p class="cart__info-button">PROCEED TO CHECKOUT</p>
-            </div>
-          </div>
+          <ul class="login__radio-form-list">
+            <li class="login__radio-form-item">
+              <input class="visually-hidden" type="radio" id="male" name="gender">
+              <label class="login__form-label" for="male">male</label>
+            </li>
+            <li class="login__radio-form-item">
+              <input class="visually-hidden" type="radio" id="female" name="gender">
+              <label class="login__form-label" for="female">female</label>
+            </li>
+          </ul>
+          <h3 class="login__form-header">Login Details:</Details>
+          </h3>
+          <ul class="login__form-list">
+            <li class="login__form-item">
+              <input class="login__form-input" type="text" placeholder="Email">
+            </li>
+            <li class="login__form-item">
+              <input class="login__form-input" type="text" placeholder="Password">
+            </li>
+          </ul>
+          <p class="login__form-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase
+            and
+            lowercase letters</p>
+          <p class="login__form-button">JOIN NOW</p>
         </div>
       </form>
+      <div class="login-text">
+        <h2 class="login-text__header">LOYALTY HAS ITS PERKS</h2>
+        <p class="login-text__text">Get in on the loyalty program where you can earn points and unlock serious perks.
+          Starting with these as soon as you
+          join:</p>
+        <ul class="login-text__list">
+          <li class="login-text__item">
+            <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-tick"></use>
+            </svg>15% off welcome offer
+          </li>
+          <li class="login-text__item">
+            <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-tick"></use>
+            </svg>Free shipping, returns and exchanges on all orders
+          </li>
+          <li class="login-text__item">
+            <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-tick"></use>
+            </svg>$10 off a purchase on your birthday
+          </li>
+          <li class="login-text__item">
+            <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-tick"></use>
+            </svg>Early access to products
+          </li>
+          <li class="login-text__item">
+            <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-tick"></use>
+            </svg>Exclusive offers & rewards
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="subscribes" style="background-image: url(../img/subscribes-bg.png);">
       <div class="subscribes__container container">
